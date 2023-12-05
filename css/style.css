@@ -1,0 +1,294 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Dosis|Indie+Flower|Lato|Lobster|Monoton|Odibee+Sans|Orbitron|Parisienne|Righteous|Rubik|Special+Elite|Trade+Winds&display=swap');
+@import url(./normalize.css);
+/* Agregamos todos los importes */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { 
+    --color-fondo-principal: rgb(238, 195, 195);
+    --color-letra-principal: rgb(255, 255, 255);
+    --color-border-principal: #000000;
+    --color-hover: rgb(255, 8, 0);
+    --color-botton:rgb(65, 52, 52); 
+}
+
+@font-face{
+    font-family:"Copyright";
+    src: url(../fonts/CopyrightKlimTypeFoundry/CopyrightKlimTypeFoundry.ttf) format("truetype");
+}
+
+@font-face {
+    font-family:"Tiempos" ;
+    src: url(../fonts/Tiempos/TiemposHeadline-Black.otf) format("truetype");
+}
+body{
+    font-family: "Copyright";
+}
+header{    
+    display: flexbox;
+    position: sticky;
+    background-color: #FFFFFF;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+.top-info{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background:var(--color-fondo-principal) ;
+}
+
+.top{
+    padding: 0rem 10%;
+    background-color: #FFFFFF;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-family:"Tiempos";
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 20px;
+}
+    
+.shop{
+    text-align: right;
+    width: 20%;
+}
+.shop button{
+    background: var(--color-botton);
+    color: var(--color-letra-principal);
+    width: 100px;
+    padding: 7px;
+    margin-left: 5px;
+    border: none;
+}
+
+.user{
+    width:15%;
+    margin-right: 20px;
+}
+
+.new{
+    font-size: 13px;
+    background-color: yellow;
+    color:var(--color-border-principal);
+    width: 10px;
+
+}
+/* Aqui empieza el main y acaba el header */
+.main-nav{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.main-nav a{
+    text-decoration: none;
+    margin-right: 2rem;
+    display: inline-block;
+    font-weight:600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--color-border-principal);
+}
+
+.main-nav .menu-gift {
+    display: inline-block;
+    position: relative;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    top:1.5rem;
+    left: -1rem;
+    z-index: 10;
+    background-color: var(--color-fondo-principal);
+    padding: 1rem;
+}
+.menu-gift:hover .submenu{
+    display: flex;
+    border: 1px solid var(--color-border-principal);
+    border-radius: 1rem;   
+}
+
+.submenu a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+.submenu a:hover{
+    text-decoration:underline;
+}
+.submenu img{
+    width: 150px;
+    border-radius: 1rem;
+    height: 70%;
+    margin: 10px;
+}
+.photo-submenu{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    display: flex;
+    background:var(--color-fondo-principal);
+    text-align: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-family:"Tiempos";
+   font-size: 50px;
+   margin-top: 55px;
+   margin-right: 200px;
+   width: 450px;
+}
+.banner img{
+    width: 750px;
+    margin-right: 60px;
+    margin-left: 80px;
+}
+.banner p{
+    font-size: 15px;
+    width: 550px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 1px;
+}
+.banner button{
+    background: var(--color-botton);
+    color: var(--color-letra-principal);
+    width: 100px;
+    padding: 7px;
+    margin-right:150px;
+    border: none;
+    margin-top: 20px;
+}
+
+.trust{
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.stars{
+    width: 100px;
+}
+.logo-trust{
+    width: 100px;
+}
+
+.ofert{
+    background-color: rgb(230, 230, 116);
+}
+
+.ofert button{
+    margin-left: 70%; 
+    background: var(--color-botton);
+    color: var(--color-letra-principal);
+    width: 100px;
+    padding: 7px;
+    border: none;
+    margin-top: 20px;
+}
+.ofert h3{
+    margin-left: 350px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+.ofert h2{
+    margin-left: 350px;
+    margin-bottom: 80px;
+}
+
+.title-grid{
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+.title-grid h1{
+    font-size: 50px;
+}
+.title-grid button{
+    margin-left: 80%;
+    text-decoration:underline;
+    border: none;
+    background-color: white;
+
+}
+.title-grid span{
+    font-size: 20px;
+    width: 20px;
+    margin-right: 2000px;
+}
+/* Aqui empieza el grid */
+.grid{
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+.card{
+width: 300px;
+padding: 10px;
+text-align: center;
+align-items: center;
+justify-content: center;
+display: flex;
+flex-direction: column;
+}
+
+.card img{
+    width: 100%;
+    size: 500px;
+}
+.foto-f{
+    margin-top: 85px;
+}
+.info-1 h3{
+    background-color: rgb(230, 230, 116);
+    color: var(--color-border-principal);
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 60px;
+}
+
+.info-1 h4{
+    font-size:15px;
+    margin-top: 10px;
+}
+
+.discount{
+    background-color: rgb(230, 230, 116);
+}
+.discount button{
+    margin-left:80%; 
+    background: var(--color-botton);
+    color: var(--color-letra-principal);
+    width: 100px;
+    padding: 7px;
+    border: none;
+    margin-top: 20px;
+}
+.discount h2{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.discount p{
+    margin-left: 50px;
+}
